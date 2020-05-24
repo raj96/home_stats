@@ -2,7 +2,7 @@ import { Client } from "paho-mqtt";
 
 class DataFetcher {
   server = {
-    host: "test.mosquitto.org",
+    host: "wss://test.mosquitto.org",
     port: 8081,
     clientId: "clientID-" + parseInt(Math.random() * 100),
     options: { rejectUnauthorized: false },
