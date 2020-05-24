@@ -76,9 +76,11 @@ class Index extends React.Component {
                   titleTypographyProps={{ variant: "h4" }}
                 ></CardHeader>
                 <CardContent>
-                  <Typography variant="h1">
-                    {this.state.temperature}°C
-                  </Typography>
+                  <center>
+                    <Typography variant="h1">
+                      {this.state.temperature}°C
+                    </Typography>
+                  </center>
                 </CardContent>
               </Card>
             </Grid>
@@ -91,7 +93,9 @@ class Index extends React.Component {
                   titleTypographyProps={{ variant: "h4" }}
                 ></CardHeader>
                 <CardContent>
-                  <Typography variant="h1">{this.state.humidity}%</Typography>
+                  <center>
+                    <Typography variant="h1">{this.state.humidity}%</Typography>
+                  </center>
                 </CardContent>
               </Card>
             </Grid>
