@@ -14,7 +14,9 @@ const styles = {
   cardRoot: {
     height: "80vh",
   },
-  card: {},
+  card: {
+    minWidth: "15rem",
+  },
   cardHead: {
     temperature: {
       backgroundColor: red[400],
