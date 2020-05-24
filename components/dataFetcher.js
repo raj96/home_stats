@@ -2,10 +2,9 @@ import { Client } from "paho-mqtt";
 
 class DataFetcher {
   server = {
-    host: "wss://test.mosquitto.org",
+    host: "test.mosquitto.org",
     port: 8081,
     clientId: "clientID-" + parseInt(Math.random() * 100),
-    options: { rejectUnauthorized: false },
     connected: false,
   };
   subTopic = "58b3cd7b92/data/#";
@@ -29,6 +28,7 @@ class DataFetcher {
 
     this.mqttClient.connect({
       onSuccess: this.onConnect,
+      useSSL: true,
     });
   }
 
