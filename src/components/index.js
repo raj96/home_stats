@@ -48,7 +48,6 @@ class Index extends React.Component {
     this.startTimer();
     new DataFetcher((data) => {
       this.destroyTimer();
-      console.log(data);
       this.setState(data);
       this.startTimer();
     });
