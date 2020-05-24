@@ -2,13 +2,9 @@ import mqtt from "mqtt";
 
 class DataFetcher {
   server = {
-    host: "wss://test.mosquitto.org:8081/mqtt",
-    port: 8081,
-    clientId: "clientID-" + parseInt(Math.random() * 100),
-    connected: false,
+    host: "wss://test.mosquitto.org:8081/mqtt"
   };
   subTopic = "58b3cd7b92/data";
-  subscribed = false;
 
   constructor(cb) {
     const mqttClient = mqtt.connect(this.server.host);
